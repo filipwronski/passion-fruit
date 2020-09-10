@@ -72,13 +72,10 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/svg',
-    // 'nuxt-webfontloader',
+    'nuxt-webfontloader',
     ['@nuxtjs/component-cache', {
       max: 10000,
       maxAge: 1000 * 60 * 60
-    }],
-    ['vue-scrollto/nuxt', {
-      duration: 300
     }],
     ['@nuxtjs/google-tag-manager', {
       id: 'GTM-N56WMW4'
@@ -105,9 +102,9 @@ export default {
     extend (config, ctx) {
     }
   },
-  // webfontloader: {
-  //   google: {
-  //     families: ['Poppins:400&display=swap']
-  //   }
-  // }
+  webfontloader: {
+    google: {
+      families: ['Poppins:400&display=swap']
+    }
+  }
 }

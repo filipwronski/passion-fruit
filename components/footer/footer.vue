@@ -1,14 +1,14 @@
 <template>
   <footer class="footer">
-    <div class="container footer__wrapper">
+    <!-- <div class="container footer__wrapper">
       <div class="footer__first">
       </div>
       <div class="footer__second">
         <p class="footer__text">
-          Designed and created by <a href="mailto:filip0822@gmail.com" alt="undraw.co">Filip Wroński</a>. Images: <a href="https://twitter.com/ninalimpi" alt="Ninalimpi">Ninalimpi</a>
+          Designed and created by <a href="https://vue-js.pl" alt="Filip Wroński">Filip Wroński</a>.
         </p>
       </div>
-    </div>
+    </div> -->
   </footer>
 </template>
 

@@ -1,11 +1,25 @@
 <template>
-  <div id="app">
-    <nuxt />
+  <div id="app" class="app">
+    <div class="app__content">
+      <main-header />
+      <nuxt />
+    </div>
+    <main-footer />
   </div>
 </template>
-<script>
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+import mainHeader from '~/components/header/header.vue'
+import mainFooter from '~/components/footer/footer.vue'
 
-export default {}
+@Component({
+  components: {
+    mainHeader,
+    mainFooter
+  }
+})
+export default class Navigation extends Vue {
+}
 </script>
 <style lang="scss">
 @font-face {
@@ -88,6 +102,33 @@ html {
 @media (max-width: 575.98px) {
   .heading-2 {
     text-align: center;
+  }
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.app {
+  position: relative;
+  background-image: url("~assets/img/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  &__content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
   }
 }
 </style>

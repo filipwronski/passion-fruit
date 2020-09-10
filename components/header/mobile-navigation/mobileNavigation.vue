@@ -46,6 +46,7 @@ export default class Navigation extends Vue {
     type: Array,
     required: true
   }) navList: NavigationLink[];
+
   @Prop({
     type: Boolean,
     required: true
