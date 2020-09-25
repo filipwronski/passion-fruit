@@ -53,7 +53,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/lazyload.js'
+    '~/plugins/lazyload.js',
+    { src: '~/plugins/vue-carousel.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules

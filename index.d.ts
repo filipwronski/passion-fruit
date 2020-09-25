@@ -5,3 +5,9 @@ declare module 'vue/types/options' {
     serverCacheKey?: any
   }
 }
+
+export interface Process {
+  client: boolean;
+  server: boolean;
+  cwd (): string;
+}

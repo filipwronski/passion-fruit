@@ -1,46 +1,5 @@
 <template>
-  <div class="home">
-    <div class="home__text">
-      <p>
-        Witajcie!
-        <br />
-        <br />
-        Są w naszym życiu pewne szczególne, wyjątkowe momenty. Chcemy, by zapadły
-        nam w pamięć na długo. Są też szczególne i wyjątkowe osoby w naszym życiu.
-      </p>
-      <br />
-      <p>
-        Jeśli pragniesz sprawić komuś bliskiemu radość, uczynić ważny życiowy
-        moment wyjątkowym, zaskoczyć, ucieszyć kogoś bliskiego zapraszam do
-        współpracy z Passionfruit!
-      </p>
-      <br />
-      <p>
-        Projekt ten zrodził się z mojej życiowej pasji jaką jest muzyka. Jej
-        różnorodność form, kształtów, znaczeń, barw zachwyca mnie od lat. To, że
-        mogę ją wyrażać poprzez mój głos jest dla mnie czymś ekscytującym i
-        dającym spełnienie. Kiedy śpiewam i obcuję z muzyką czuję, że żyję!
-      </p>
-      <br />
-      <p>
-        Chcę podzielić się z Tobą moją energią, radością, fascynacją mojego życia.
-        Zapraszam do zanurzenia się w dźwięki i słowa o miłości, życiu, relacjach,
-        codzienności, które stworzyli najlepsi polscy i światowej sławy artyści.
-        Odetchnij, odpocznij przy dźwiękach muzyki. Daj się na chwile przenieść w
-        świat różnorodnych dźwięków, podniosłych słów, poezji, sztuki. Świętuj to
-        co ważne przy dźwiękach muzyki. Spójrz przez chwilę na życie z innej,
-        niecodziennej perspektywy!
-      </p>
-      <br />
-      <p>
-        Cenię sobie indywidualizm człowieka, dlatego postaram się przygotować coś
-        szczególnego specjalnie dla Ciebie! Porozmawiamy o Twoich preferencjach,
-        oczekiwaniach i wspólnie wybierzemy to co dla Ciebie najlepsze!
-      </p>
-
-      <p>Szanuję odrębność , szanuję wyjątkowość każdego</p>
-    </div>
-  </div>
+  <div class="home"></div>
 </template>
 
 <script lang="ts">
@@ -51,18 +10,5 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
-.home {
-  margin-top: 205px;
-  max-width: 600px;
-  margin-right: 100px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-end;
-  font-size: 14px;
-  &__text {
-    background: rgba($color: #000000, $alpha: .4);
-    padding: 20px;
-  }
-}
+
 </style>

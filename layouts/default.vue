@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    <div class="app__content">
+    <div class="app-wrapper">
       <main-header />
       <nuxt />
     </div>
@@ -56,6 +56,8 @@ html {
 .heading {
   color: #fff;
   letter-spacing: 1px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 .heading-2 {
   color: #625fe5;
@@ -124,11 +126,36 @@ html {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-  &__content {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: auto;
+}
+
+.app-wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto;
+}
+
+.app-content {
+  padding: 66px;
+  &--dark-background {
+      background: rgba($color: #000000, $alpha: .4);
   }
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100%;;
+}
+
+.context-center {
+  display: flex;
+  align-items: center;
 }
 </style>

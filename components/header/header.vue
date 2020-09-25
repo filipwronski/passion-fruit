@@ -5,7 +5,7 @@
         :to="{path: '/'}"
         title="Strona główna"
       >
-        PASSIONFRUIT
+        <img class="logo__img" src="~/assets/img/logo-white.svg" />
       </router-link>
     </div>
     <navigation />
@@ -27,14 +27,17 @@ export default class MainHeader extends Vue {
 
 <style scoped lang="scss">
 .main-header {
-  margin-top: 100px;
-  padding-left: 100px;
+  margin-top: 50px;
+  padding-left: 50px;
 }
 .logo {
   color: #fff;
   a {
     text-decoration: none;
     color: #fff;
+  }
+  &__img {
+    max-width: 130px;
   }
 }
 </style>

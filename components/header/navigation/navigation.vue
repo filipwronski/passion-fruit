@@ -3,10 +3,10 @@
     <ul class="navigation__list">
       <li class="navigation__item">
         <router-link
-          :to="{path: '/o-mnie'}"
-          title="O mnie"
+          :to="{path: '/o-nas'}"
+          title="O nas"
         >
-          O mnie
+          O nas
         </router-link>
       </li>
       <li
@@ -100,7 +100,7 @@ export default class Navigation extends Vue {
 
 <style lang="scss" scoped>
 .navigation {
-  margin-top: 100px;
+  margin-top: 50px;
   color: $brand-pink;
   &__item {
     padding: 5px;
@@ -151,7 +151,7 @@ export default class Navigation extends Vue {
         &__submenu-list {
           visibility: visible;
           opacity: 1;
-          height: 93px;
+          height: 110px;
           padding-left: 15px;
         }
       }
