@@ -1,12 +1,20 @@
 <template>
   <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item">
+    <hamburger
+      :is-mobile-menu-visible="isMobileMenuVisible"
+      @toggleMenu="toggleMobileMenu()"
+    />
+    <ul
+      class="navigation__list"
+      :class="{'navigation__list--visible-mobile': isMobileMenuVisible}"
+    >
+      <li class="navigation__item" @toggleMenu="toggleMobileMenu()">
         <router-link
-          :to="{path: '/o-nas'}"
-          title="O nas"
+          :to="{path: '/o-mnie'}"
+          title="O mnie"
+          @click.native="routerLeave()"
         >
-          O nas
+          O mnie
         </router-link>
       </li>
       <li
@@ -21,6 +29,7 @@
             <router-link
               :to="{path: '/oprawa-muzyczna-slubow'}"
               title="Oprawa muzyczna ślubów"
+              @click.native="routerLeave()"
             >
               Oprawa muzyczna ślubów
             </router-link>
@@ -29,6 +38,7 @@
             <router-link
               :to="{path: '/dla-firm'}"
               title="Dla firm"
+              @click.native="routerLeave()"
             >
               Dla firm
             </router-link>
@@ -37,6 +47,7 @@
             <router-link
               :to="{path: '/dla-kazdego'}"
               title="Dla każdego"
+              @click.native="routerLeave()"
             >
               Dla każdego
             </router-link>
@@ -47,38 +58,41 @@
         <router-link
           :to="{path: '/audio'}"
           title="Audio"
+          @click.native="routerLeave()"
         >
           Audio
         </router-link>
       </li>
-      <li class="navigation__item">
+      <!-- <li class="navigation__item">
         <router-link
           :to="{path: '/video'}"
           title="Video"
         >
           Video
         </router-link>
-      </li>
+      </li> -->
       <li class="navigation__item">
         <router-link
           :to="{path: '/galeria'}"
           title="Galeria"
+          @click.native="routerLeave()"
         >
           Galeria
         </router-link>
       </li>
-      <li class="navigation__item">
+      <!-- <li class="navigation__item">
         <router-link
           :to="{path: '/blog'}"
           title="Blog"
         >
           Blog
         </router-link>
-      </li>
+      </li> -->
       <li class="navigation__item">
         <router-link
           :to="{path: '/kontakt'}"
           title="Kontakt"
+          @click.native="routerLeave()"
         >
           Kontakt
         </router-link>
@@ -89,11 +103,25 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-@Component
+import Hamburger from '~/components/header/hamburger/hamburger.vue'
+@Component({
+  components: {
+    Hamburger
+  }
+})
 export default class Navigation extends Vue {
+  isMobileMenuVisible = false
   isSubmenuActive: boolean = false
+  toggleMobileMenu (): void {
+    this.isMobileMenuVisible = !this.isMobileMenuVisible
+  }
+
   toggleSubmenu (): void {
     this.isSubmenuActive = !this.isSubmenuActive
+  }
+
+  routerLeave () {
+    this.isMobileMenuVisible = false
   }
 }
 </script>
@@ -102,6 +130,10 @@ export default class Navigation extends Vue {
 .navigation {
   margin-top: 50px;
   color: $brand-pink;
+  @include respond-to(handheld){
+      margin-top: 0;
+      display: inline-block;
+  }
   &__item {
     padding: 5px;
     text-transform: uppercase;
@@ -133,6 +165,22 @@ export default class Navigation extends Vue {
     list-style: none;
     padding-left: 0;
     display: inline-block;
+    @include respond-to(handheld){
+      display: none;
+    }
+    &--visible-mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      background: #000;
+      z-index: 100;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+    }
   }
   a {
     color: $brand-pink;

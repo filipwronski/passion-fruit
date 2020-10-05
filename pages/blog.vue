@@ -7,7 +7,7 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class Audio extends Vue {
+export default class Blog extends Vue {
 }
 
 </script>

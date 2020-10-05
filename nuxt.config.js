@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Filip Wroński - JavaScript Developer',
+    title: 'passionfruit - profesjonalna oprawa muzyczna',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,12 +13,17 @@ export default {
       {
         hid: `keywords`,
         name: 'keywords',
-        keywords: 'Vue.js, JavaScript, Filip Wroński, PWA, Web Apps'
+        keywords: 'passionfruit, oprawa muzyczna, oprawa muzyncza wesel, muzyka na żywo, oprawa muzyczna ślubów'
+      },
+      {
+        hid: `robots`,
+        property: 'robots',
+        content: `noindex, nofollow`
       },
       {
         hid: `og:title`,
         property: 'og:title',
-        content: `Filip Wroński - JavaScript Developer`
+        content: `passionfruit - profesjonalna oprawa muzyczna`
       },
       {
         hid: `og:url`,
@@ -33,7 +38,7 @@ export default {
       {
         hid: `og:description`,
         property: 'og:description',
-        content: 'Vue.js, JavaScript, Filip Wroński, PWA, Web Apps'
+        content: 'Profejsonalna oprawa muzyczna ślubów, imprez firmowych oraz uroczystości rodzinnych'
       }
     ],
     link: [
@@ -55,6 +60,7 @@ export default {
   plugins: [
     '~/plugins/lazyload.js',
     { src: '~/plugins/vue-carousel.js', mode: 'client' },
+    { src: '~/plugins/vue-youtube-embed.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -84,7 +90,8 @@ export default {
   ],
   styleResources: {
     scss: [
-      'assets/scss/_variables.scss'
+      'assets/scss/_variables.scss',
+      'assets/scss/_mixins.scss'
     ]
   },
   /*

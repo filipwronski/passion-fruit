@@ -2,7 +2,9 @@
   <div id="app" class="app">
     <div class="app-wrapper">
       <main-header />
-      <nuxt />
+      <div>
+        <nuxt />
+      </div>
     </div>
     <main-footer />
   </div>
@@ -38,6 +40,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -54,26 +57,13 @@ html {
 }
 
 .heading {
-  color: #fff;
-  letter-spacing: 1px;
+  color: $brand-pink;
   font-size: 24px;
   text-transform: uppercase;
 }
 .heading-2 {
-  color: #625fe5;
-  font-size: 24px;
-  letter-spacing: 1px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    background: #625fe5;
-    height: 1px;
-    bottom: 50px;
-  }
+  color: #fff;
+  font-size: 18px;
 }
 .heading-3 {
   font-weight: 400;
@@ -122,7 +112,8 @@ html {
 .app {
   position: relative;
   background-image: url("~assets/img/home-bg.jpg");
-  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
@@ -133,12 +124,20 @@ html {
   min-height: 100vh;
   grid-template-columns: 250px 1fr;
   grid-template-rows: auto;
+  @include respond-to(handheld){
+      grid-template-rows: 100px 1fr;
+      grid-template-columns: 1fr;
+  }
 }
 
 .app-content {
   padding: 66px;
   &--dark-background {
       background: rgba($color: #000000, $alpha: .4);
+  }
+  @include respond-to(handheld){
+      height: 100%;
+      padding: 25px 15px;
   }
 }
 
