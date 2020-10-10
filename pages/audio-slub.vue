@@ -1,11 +1,14 @@
 <template>
-  <div class="video app-content app-content--dark-background">
+  <div class="audio app-content app-content--dark-background">
+    <h1 class="heading audio__title">
+      AUDIO - ŚLUB
+    </h1>
     <no-ssr>
       <youtube-media
         v-for="video in videoList"
         :key="video.id"
         :video-id="video.id"
-        class="video__item"
+        class="audio__item"
       />
     </no-ssr>
   </div>
@@ -15,19 +18,19 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class Audio extends Vue {
+export default class AudioWedding extends Vue {
   videoList = [
     {
-      id: 'D7QqoC0AuzE'
-    },
-    {
-      id: 'Wehl3WDeqfA'
+      id: 'juTCmScls4E'
     },
     {
       id: 'sEvY7wj8y1s'
     },
     {
-      id: 'juTCmScls4E'
+      id: 'Wehl3WDeqfA'
+    },
+    {
+      id: 'D7QqoC0AuzE'
     }
   ]
 }
@@ -35,9 +38,13 @@ export default class Audio extends Vue {
 </script>
 
 <style lang="scss">
-  .video {
+  .audio {
     display: block;
     width: 100%;
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
   &__item {
     margin: 20px auto;
       iframe {

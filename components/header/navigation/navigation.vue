@@ -19,9 +19,9 @@
       </li>
       <li
         class="navigation__item navigation__submenu"
-        :class="{ 'navigation__submenu--active': isSubmenuActive }"
+        :class="{ 'navigation__submenu--active': isOfferSubmenuActive }"
       >
-        <span @click="toggleSubmenu()">
+        <span @click="toggleOfferSubmenu()">
           Oferta <span class="caret"></span>
         </span>
         <ul class="navigation__submenu-list">
@@ -54,14 +54,33 @@
           </li>
         </ul>
       </li>
-      <li class="navigation__item">
-        <router-link
-          :to="{path: '/audio'}"
-          title="Audio"
-          @click.native="routerLeave()"
-        >
-          Audio
-        </router-link>
+      <li
+        class="navigation__item navigation__submenu"
+        :class="{ 'navigation__submenu--active': isAudioSubmenuActive }"
+      >
+        <span @click="toggleAudioSubmenu()">
+          Audio <span class="caret"></span>
+        </span>
+        <ul class="navigation__submenu-list navigation__submenu-list--audio">
+          <li class="navigation__item">
+            <router-link
+              :to="{path: '/audio-przeboje'}"
+              title="Audio - przeboje"
+              @click.native="routerLeave()"
+            >
+              Audio - przeboje
+            </router-link>
+          </li>
+          <li class="navigation__item">
+            <router-link
+              :to="{path: '/audio-slub'}"
+              title="Audio - ślub"
+              @click.native="routerLeave()"
+            >
+              Audio - ślub
+            </router-link>
+          </li>
+        </ul>
       </li>
       <!-- <li class="navigation__item">
         <router-link
@@ -111,13 +130,18 @@ import Hamburger from '~/components/header/hamburger/hamburger.vue'
 })
 export default class Navigation extends Vue {
   isMobileMenuVisible = false
-  isSubmenuActive: boolean = false
+  isOfferSubmenuActive: boolean = false
+  isAudioSubmenuActive: boolean = false
   toggleMobileMenu (): void {
     this.isMobileMenuVisible = !this.isMobileMenuVisible
   }
 
-  toggleSubmenu (): void {
-    this.isSubmenuActive = !this.isSubmenuActive
+  toggleOfferSubmenu (): void {
+    this.isOfferSubmenuActive = !this.isOfferSubmenuActive
+  }
+
+  toggleAudioSubmenu (): void {
+    this.isAudioSubmenuActive = !this.isAudioSubmenuActive
   }
 
   routerLeave () {
@@ -165,6 +189,9 @@ export default class Navigation extends Vue {
     list-style: none;
     padding-left: 0;
     display: inline-block;
+    &:focus {
+      outline: none;
+    }
     @include respond-to(handheld){
       display: none;
     }
@@ -201,6 +228,9 @@ export default class Navigation extends Vue {
           opacity: 1;
           height: 110px;
           padding-left: 15px;
+          &--audio {
+            height: 60px;
+          }
         }
       }
     }

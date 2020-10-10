@@ -43,6 +43,10 @@ html {
   overflow-x: hidden;
 }
 
+p {
+  font-style: italic;
+}
+
 *,
 *:before,
 *:after {
