@@ -17,7 +17,18 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - audio przeboje',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Sprawdź nasze nagrania - utwory dostosowane do każdej okazji.'
+      }
+    ]
+  }
+})
 export default class AudioHits extends Vue {
   videoList = [
     {

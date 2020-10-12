@@ -18,19 +18,22 @@ import mainFooter from '~/components/footer/footer.vue'
   components: {
     mainHeader,
     mainFooter
+  },
+  head () {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://passion-fruit.pl' + this.$route.path
+        }
+      ]
+    }
   }
 })
 export default class Navigation extends Vue {
 }
 </script>
 <style lang="scss">
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/font/poppins.ttf') format('ttff'),
-}
-
 html {
   font-family: 'Poppins';
   font-size: 16px;
@@ -43,8 +46,20 @@ html {
   overflow-x: hidden;
 }
 
-p {
-  font-style: italic;
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('~assets/img/home-bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 *,
@@ -113,7 +128,7 @@ p {
     border-left: 4px solid transparent;
 }
 
-.app {
+/* .app {
   position: relative;
   background-image: url("~assets/img/home-bg.jpg");
   background-repeat: no-repeat;
@@ -121,7 +136,7 @@ p {
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-}
+} */
 
 .app-wrapper {
   display: grid;

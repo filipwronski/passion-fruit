@@ -3,10 +3,10 @@
     <h1 class="heading">
       Witajcie!
     </h1>
+    <br />
     <p>
-      <br />
-      Są w naszym życiu pewne szczególne, wyjątkowe momenty.<br />
-      Chcemy, by zapadły nam w pamięć na długo.<br />
+      Są w naszym życiu pewne szczególne, wyjątkowe momenty.
+      Chcemy, by zapadły nam w pamięć na długo.
       Są też szczególne i wyjątkowe osoby w naszym życiu.<br />
       <br />
       Jeśli pragniesz sprawić komuś bliskiemu radość, uczynić ważny życiowy moment

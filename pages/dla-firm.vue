@@ -29,7 +29,19 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - oferta dla firm',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: `Oferta dla firm - oprawa muzyczna uroczystości takich jak: impreza firmowa, bankiet,
+        przyjęcie koktajlowe, konferencja, spotkanie biznesowe, szkolenie`
+      }
+    ]
+  }
+})
 export default class ServiceCompany extends Vue {
 }
 

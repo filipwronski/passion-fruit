@@ -32,7 +32,18 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - oferta - oprawa muzyczna ślubów',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Oferta - oprawa muzyczna ślubów - realizację pieśni na wejście, ofiarowanie, komunię, uwielbienie.'
+      }
+    ]
+  }
+})
 export default class ServiceWeding extends Vue {
 }
 

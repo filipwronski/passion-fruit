@@ -23,7 +23,18 @@
 <script lang="ts">
 
 import { Vue, Component } from 'vue-property-decorator'
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - galeria zdjęć',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Galeria - zapraszamy do zapoznania się ze zdjęciami, które prezentują nasze wcześniejsze realizacje'
+      }
+    ]
+  }
+})
 export default class Gallery extends Vue {
   imageList = [
     {

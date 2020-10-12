@@ -17,7 +17,18 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - audio ślub',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Sprawdź nasze nagrania - utwory idealne jako oprawa muzyczna ślubu.'
+      }
+    ]
+  }
+})
 export default class AudioWedding extends Vue {
   videoList = [
     {

@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I live in Warsaw and work with Vue.js, PWA, Websites, Web Apps' },
+      { hid: 'description', name: 'description', content: 'Profesjonalna oprawa muzyczna ślubów, imprez firmowych oraz prywatnych uroczystości.' },
       {
         hid: `keywords`,
         name: 'keywords',
@@ -18,7 +18,7 @@ export default {
       {
         hid: `robots`,
         property: 'robots',
-        content: `noindex, nofollow`
+        content: `index, follow`
       },
       {
         hid: `og:title`,

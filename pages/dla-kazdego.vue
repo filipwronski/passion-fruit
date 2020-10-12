@@ -9,8 +9,8 @@
         UROCZYSTOŚCI RODZINNE
       </h2>
       <p>
-        Pragniemy, by najważniejsze wydarzenia i spotkania w gronie Państwa rodziny i przyjaciół takie jak rocznice ślubu, jubileusze,
-        imieniny były świętowane z dbałością o wszystkie szczegóły, także o muzykę.<br />
+        Chcemy, aby najważniejsze spotkania w gronie najbliższych takie jak jubileusze, imieniny, komunie były
+        świętowane z dbałością o wszystkie szczegóły. Zapewniamy oprawę muzyczną na najwyższym poziomie.<br />
         <br />
         Postaramy się  zadbać o ciepłą i serdeczną atmosferę  Waszych rodzinnych spotkań.
         Zapewniamy dobór odpowiedniego repertuaru w zależności od uroczystości, dla każdej osoby indywidualnie, niezależnie od wieku.
@@ -47,7 +47,19 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  head: {
+    title: 'Passionfruit - oferta dla każdego',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: `Oferta dla każdego - oprawa muzyczna uroczystości takich jak: Mikołajki,
+        Andrzejki, Walentynki, Jubileusze, Dzień Matki czy inne uroczystości prywatne i przyjęcia`
+      }
+    ]
+  }
+})
 export default class ServiceEveryone extends Vue {
 }
 
