@@ -26,6 +26,7 @@
       Porozmawiamy o Twoich  preferencjach, oczekiwaniach i wspólnie wybierzemy repertuar
       najlepiej pasujący do Ciebie!
       <br />
+      <br />
       „Nikt nie jest samotną wyspą” – to stwierdzenie jest aktualne w moim życiu.
       Dlatego projekt ten realizuję wspólnie z kreatywnym, młodym pianistą Marcinem Zwierzchowskim.
     </p>

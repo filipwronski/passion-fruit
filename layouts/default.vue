@@ -128,15 +128,11 @@ body:before {
     border-left: 4px solid transparent;
 }
 
-/* .app {
+.app {
   position: relative;
-  background-image: url("~assets/img/home-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
-} */
+}
 
 .app-wrapper {
   display: grid;

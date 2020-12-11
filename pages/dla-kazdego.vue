@@ -9,10 +9,10 @@
         UROCZYSTOŚCI RODZINNE
       </h2>
       <p>
-        Chcemy, aby najważniejsze spotkania w gronie najbliższych takie jak jubileusze, imieniny, komunie były
-        świętowane z dbałością o wszystkie szczegóły. Zapewniamy oprawę muzyczną na najwyższym poziomie.<br />
+        Spotkania w gronie rodziny i przyjaciół takie jak rocznice ślubu, jubileusze, imieniny to
+        doskonała okazja do posłuchania muzyki na żywo! Pragniemy pomóc Państwu w stworzeniu
+        ich ciepłej i serdecznej atmosfery oraz dostarczyć zaproszonym gościom dużej dawki radości i wzruszeń!<br />
         <br />
-        Postaramy się  zadbać o ciepłą i serdeczną atmosferę  Waszych rodzinnych spotkań.
         Zapewniamy dobór odpowiedniego repertuaru w zależności od uroczystości, dla każdej osoby indywidualnie, niezależnie od wieku.
         Wykonujemy znane przeboje w nowych, ciekawych aranżacjach, które zadowolą młodsze i starsze pokolenie słuchaczy.
       </p>
@@ -37,8 +37,9 @@
         OPRAWA MUZYCZNA PODCZAS ZARĘCZYN
       </h2>
       <p>
-        By ten dzień był dla wybranki serca romantyczną niespodzianką, warto zadbać o jedyną w swoim rodzaju oprawę muzyczną.
-        Zaskocz swoją ukochaną muzyką na żywo. Przypomnienie ważnych dla Was piosenek uświetni ten szczególny moment!
+        Jedyna w swoim rodzaju oprawa muzyczna to niezwykle romantyczna niespodzianka dla
+        wybranki serca. Zaskocz swoją ukochaną muzyką na żywo! Przypomnienie ważnych dla Was
+        piosenek z pewnością uświetni ten szczególny moment!
       </p>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home app-content app-content--dark-background">
+  <div class="home app-content">
     <h1 class="heading">
       Witajcie!
     </h1>
@@ -7,7 +7,7 @@
     <p>
       Są w naszym życiu pewne szczególne, wyjątkowe momenty.
       Chcemy, by zapadły nam w pamięć na długo.
-      Są też szczególne i wyjątkowe osoby w naszym życiu.<br />
+      Są też szczególne i&nbsp;wyjątkowe osoby w naszym życiu.<br />
       <br />
       Jeśli pragniesz sprawić komuś bliskiemu radość, uczynić ważny życiowy moment
       wyjątkowym, zaskoczyć - zapraszam do współpracy z Passionfruit!<br />
@@ -28,7 +28,7 @@ export default class Home extends Vue {}
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     text-align: center;
     @include respond-to(handheld){
       width: auto;

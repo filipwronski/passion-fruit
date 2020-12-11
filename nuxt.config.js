@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'passionfruit - profesjonalna oprawa muzyczna',
+    title: 'Passionfruit - profesjonalna oprawa muzyczna',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,17 +23,17 @@ export default {
       {
         hid: `og:title`,
         property: 'og:title',
-        content: `passionfruit - profesjonalna oprawa muzyczna`
+        content: `Passionfruit - profesjonalna oprawa muzyczna`
       },
       {
         hid: `og:url`,
         property: 'og:url',
-        content: 'vue-js.pl'
+        content: 'passion-fruit.pl'
       },
       {
         hid: `og:image`,
         property: 'og:image',
-        content: '/ogimage.jpg'
+        content: '/icon.png'
       },
       {
         hid: `og:description`,
@@ -85,7 +85,7 @@ export default {
       maxAge: 1000 * 60 * 60
     }],
     ['@nuxtjs/google-tag-manager', {
-      id: 'GTM-N56WMW4'
+      id: 'GTM-P3QCV78'
     }],
   ],
   styleResources: {
@@ -93,6 +93,14 @@ export default {
       'assets/scss/_variables.scss',
       'assets/scss/_mixins.scss'
     ]
+  },
+  pwa: {
+    icon: {
+      source: 'assets/pwa/icon-2.png',
+    },
+    meta: {
+      name: 'Passionfruit'
+    }
   },
   /*
   ** Axios module configuration
@@ -104,6 +112,7 @@ export default {
   ** Build configuration
   */
   build: {
+    analyze: true,
     /*
     ** You can extend webpack config here
     */
